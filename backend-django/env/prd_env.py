@@ -85,9 +85,9 @@ MICROSOFT_REDIRECT_URI = os.environ.get('MICROSOFT_REDIRECT_URI',
 # 钉钉 OAuth
 DINGTALK_APP_ID = os.environ.get('DINGTALK_APP_ID', 'your-dingtalk-app-id')
 DINGTALK_APP_SECRET = os.environ.get('DINGTALK_APP_SECRET', 'your-dingtalk-app-secret')
-DINGTALK_REDIRECT_URI = os.environ.get('DINGTALK_REDIRECT_URI', 'http://localhost:5777/oauth/dingtalk/callback')
+DINGTALK_REDIRECT_URI = os.environ.get('DINGTALK_REDIRECT_URI', 'https://localhost:5777/oauth/dingtalk/callback')
 
 # 飞书 OAuth
 FEISHU_APP_ID = os.environ.get('FEISHU_APP_ID', 'your-feishu-app-id')
 FEISHU_APP_SECRET = os.environ.get('FEISHU_APP_SECRET', 'your-feishu-app-secret')
-FEISHU_REDIRECT_URI = os.environ.get('FEISHU_REDIRECT_URI', 'http://localhost:5777/oauth/feishu/callback')
+FEISHU_REDIRECT_URI = os.environ.get('FEISHU_REDIRECT_URI', 'https://localhost:5777/oauth/feishu/callback')

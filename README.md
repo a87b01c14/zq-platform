@@ -14,9 +14,14 @@ A modern enterprise-level admin management system with dual backend options (Dja
 </div>
 
 ## Demo Link
+### Django
 [https://django-ninja.zq-platform.cn](https://django-ninja.zq-platform.cn/)
+### FastAPI
+[https://fastapi.zq-platform.cn](https://fastapi.zq-platform.cn/)
+### Explorer Version (Under Development...)
+[https://explorer.zq-platform.cn](https://explorer.zq-platform.cn/)
 
-## 📞 Contact
+## 📞 Contact & Cooperation
 
 For questions or suggestions, please contact us via:
 
@@ -50,7 +55,6 @@ zq-platform is a comprehensive enterprise-level admin management system solution
 - **Core Framework**: Django 5.2.7
 - **API Framework**: Django Ninja 1.4.5 (High-performance API framework)
 - **Authentication**: PyJWT 2.8.0
-- **Async Tasks**: Celery 5.4.0 + Django Celery Beat
 - **Task Scheduling**: APScheduler 3.10.4
 - **Caching**: Redis + django-redis
 - **WebSocket**: Django Channels 4.2
@@ -145,7 +149,7 @@ zq-platform/
 
 - **Backend**
   - Python >= 3.10
-  - MySQL >= 5.7 / PostgreSQL >= 12 / SQL Server / SQLite
+  - MySQL >= 5.7 / PostgreSQL >= 12 / SQL Server
   - Redis >= 5.0
 
 - **Frontend**

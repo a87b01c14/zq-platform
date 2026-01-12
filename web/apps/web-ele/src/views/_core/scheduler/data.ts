@@ -330,8 +330,9 @@ export function useJobFormSchema(): VbenFormSchema[] {
       label: $t('scheduler.allowConcurrent'),
     },
     {
-      component: 'Textarea',
+      component: 'Input',
       componentProps: {
+        type: 'textarea',
         placeholder: $t('scheduler.remarkPlaceholder'),
         rows: 3,
       },

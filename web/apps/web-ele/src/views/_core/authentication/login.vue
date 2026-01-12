@@ -59,8 +59,11 @@ const formSchema = computed((): VbenFormSchema[] => {
     {
       component: 'VbenInput',
       componentProps: {
-        placeholder: $t('authentication.usernameTip'),
+        // placeholder: $t('authentication.usernameTip'),
+        placeholder: $t('authentication.loginSubtitle'),
+        disabled: true,
       },
+
       // dependencies: {
       //   trigger(values, form) {
       //     if (values.selectAccount) {
@@ -85,20 +88,22 @@ const formSchema = computed((): VbenFormSchema[] => {
     {
       component: 'VbenInputPassword',
       componentProps: {
-        placeholder: $t('authentication.password'),
+        // placeholder: $t('authentication.password'),
+        placeholder: $t('authentication.loginSubtitle'),
+        disabled: true,
       },
       defaultValue: '',
       fieldName: 'password',
       label: $t('authentication.password'),
       rules: z.string().min(1, { message: $t('authentication.passwordTip') }),
     },
-    {
-      component: markRaw(SliderCaptcha),
-      fieldName: 'captcha',
-      rules: z.boolean().refine((value) => value, {
-        message: $t('authentication.verifyRequiredTip'),
-      }),
-    },
+    // {
+    //   component: markRaw(SliderCaptcha),
+    //   fieldName: 'captcha',
+    //   rules: z.boolean().refine((value) => value, {
+    //     message: $t('authentication.verifyRequiredTip'),
+    //   }),
+    // },
   ];
 });
 

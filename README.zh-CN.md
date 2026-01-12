@@ -14,7 +14,10 @@
 </div>
 
 ## 演示链接
+### Django
 [https://django-ninja.zq-platform.cn](https://django-ninja.zq-platform.cn/)
+### FastAPI
+[https://fastapi.zq-platform.cn](https://fastapi.zq-platform.cn/)
 
 ## 📞 联系方式
 

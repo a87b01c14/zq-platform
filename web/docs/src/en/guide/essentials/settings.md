@@ -237,8 +237,8 @@ const defaultPreferences: Preferences = {
     styleType: 'normal',
   },
   copyright: {
-    companyName: 'Vben',
-    companySiteLink: 'https://www.vben.pro',
+    companyName: 'ZQ-Platform',
+    companySiteLink: 'https://github.com/jiangzhikj/zq-platform',
     date: '2024',
     enable: true,
     icp: '',

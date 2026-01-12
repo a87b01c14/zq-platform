@@ -12,7 +12,7 @@ User API - 用户接口
 """
 from typing import List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, File
+from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, File, Request
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -27,6 +27,7 @@ from core.user.schema import (
     UserProfileUpdateIn
 )
 from core.user.service import UserService
+from utils.security import get_current_user
 
 router = APIRouter(prefix="/user", tags=["用户管理"])
 
@@ -89,6 +90,16 @@ async def get_user_list(
         items=[_build_user_response(item) for item in items],
         total=total
     )
+
+
+@router.get("/profile/me", response_model=UserResponse, summary="获取当前用户信息")
+async def get_current_user_profile(
+    request: Request,
+    db: AsyncSession = Depends(get_db)
+):
+    """获取当前登录用户的个人信息"""
+    current_user = await get_current_user(request, db)
+    return _build_user_response(current_user)
 
 
 @router.get("/simple", response_model=List[UserSimple], summary="获取用户简单列表")

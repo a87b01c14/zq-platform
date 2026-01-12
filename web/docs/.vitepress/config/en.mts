@@ -20,7 +20,7 @@ export const en = defineConfig({
       text: 'Edit this page on GitHub',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} ZQ-Platform`,
       message: 'Released under the MIT License.',
     },
     langMenuLabel: 'Language',

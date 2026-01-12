@@ -123,6 +123,12 @@ function createRequestClient(baseURL: string, options?: RequestClientOptions) {
       doRefreshToken,
       enableRefreshToken: preferences.app.enableRefreshToken,
       formatToken,
+      // 登录接口的401错误不应该触发重新认证，应该显示错误消息
+      shouldHandle: (error) => {
+        const url = error?.config?.url || '';
+        // 登录、刷新token等接口的401错误不处理，让错误消息拦截器处理
+        return !url.includes('/login') && !url.includes('/refresh_token');
+      },
     }),
   );
 

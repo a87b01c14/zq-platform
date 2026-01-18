@@ -26,8 +26,14 @@ A modern enterprise-level admin management system with dual backend options (Dja
 For questions or suggestions, please contact us via:
 
 - Issue: [GitHub Issues](../../issues)
+
 - Email: jiangzhikj@outlook.com
+
 - WeChat: dlpuzcl
+
+- QQ Group: 1073561328
+
+  <img src="qq.png" alt="qq" style="zoom:25%; align-items: flex-start" />
 
 ## 📖 Introduction
 

@@ -33,7 +33,7 @@ For questions or suggestions, please contact us via:
 
 - QQ Group: 1073561328
 
-  <img src="qq.png" alt="qq" style="zoom:25%; align-items: flex-start" />
+<img src="qq.png" alt="qq" width="200" />
 
 ## 📖 Introduction
 
